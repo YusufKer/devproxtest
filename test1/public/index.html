@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.18.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.18.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <section id="test-1">
+          <form class="form-A">
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+              <label for="surname">Surname:</label>
+              <input type="text" id="surname">
+              <label for="id-number">ID Number:</label>
+              <input type="text" id="id-number">
+              <label for="DOB">Date of birth: (dd/mm/yyyy)</label>
+              <input type="text" id="DOB">
+              <div>
+                  <button id="post-button">Post</button>
+                  <button id="cancel-button">Cancel</button>
+              </div>
+          </form>
+          <div class="error">
+              <p>Validation Error:</p>
+              <ul id="validation-message">Not allowed</ul>
+          </div>
+      </section>
+      <section>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Date of Birth</th>
+            <th>ID Number</th>
+          </tr>
+          <tbody id="users-data">
+            
+          </tbody>
+        </table>
+      </section>
+  </div>
+  </body>
+</html>
