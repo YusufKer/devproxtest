@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    max-width:1200px;
+    margin:auto;
+    padding:16px;
+    background-color: lightgray;
+    min-height: 100vh;
+}
+
+.form-A{
+    padding:16px 0;
+    display: grid;
+    grid-gap:16px;
+}
+
+.form-A label{
+    font-size:24px
+}
+
+.form-A input{
+    height:32px;
+    border: none;
+    font-size: 18px;
+    padding: 0 8px;
+}
+
+.form-A button{
+    height: 32px;
+    padding: 0 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.error{
+    display: none;
+    border: 1px solid red;
+    background-color: rgba(255,0,0,0.4);
+    padding: 16px;
+}
